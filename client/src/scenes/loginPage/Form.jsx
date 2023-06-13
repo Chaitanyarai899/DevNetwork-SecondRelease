@@ -42,8 +42,8 @@ const initialValuesRegister = {
 };
 
 const initialValuesLogin = {
-  email: "",
-  password: "",
+  email: "mrguest@gmail.com",
+  password: "123456",
 };
 
 const Form = () => {
@@ -247,6 +247,7 @@ const Form = () => {
             >
               {isLogin ? "LOGIN" : "REGISTER"}
             </Button>
+            
             <Typography
               onClick={() => {
                 setPageType(isLogin ? "register" : "login");
