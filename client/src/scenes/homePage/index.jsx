@@ -13,8 +13,11 @@ const HomePage = () => {
 
   return (
     <Box>
-      <Navbar />
+      <Box position="fixed" top={0} width="100%" zIndex={1}>
+        <Navbar />
+      </Box>
       <Box
+        marginTop="64px" // Adjust the margin based on the height of your Navbar
         width="100%"
         padding="2rem 6%"
         display={isNonMobileScreens ? "flex" : "block"}
