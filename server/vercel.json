@@ -14,5 +14,12 @@
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ]
+  ],
+  "dev": {
+    "build": {
+      "config": {
+        "args": ["install", "--legacy-peer-deps"]
+      }
+    }
+  }
 }
